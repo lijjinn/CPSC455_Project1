@@ -1,22 +1,24 @@
-# Real-Time Chat Application 
+#  User Guide:Real-Time Chat Application 
 
 # Overview
 
-This project is a real-time chat application built using Flask and Socket.IO. It allows users to join or create chat rooms, send and receive messages in real time, and manage multiple active users per room.
+Welcome to the Real-Time Chat Application! This web-based chat platform allows you to create or join chat rooms, send messages in real time, and interact with other users seamlessly.
 
 # Features
 
-- Real-time messaging: Users can send and receive messages instantly.
+- Instant messaging – Messages are sent and received in real time.
 
-- Room-based chat: Users can create or join chat rooms using unique room codes.
+- Chat rooms – Users can join existing chat rooms using a room code or create their own.
 
-- User authentication (session-based): Users must enter a name before joining a chat room.
+- User-friendly interface – Simple and intuitive chat layout.
+
+- Connection notifications – See when users join or leave a chat room.
 
 - WebSocket communication: Messages are transmitted over a WebSocket connection using Flask-SocketIO.
 
-- Automatic room management: The system automatically deletes inactive rooms.
+- Secure and session-based – Users enter a name before joining a chat room.
 
-- Graceful handling of connections and disconnections: Users joining or leaving rooms trigger notifications.
+- No rate limiting – Users can send messages without restrictions (see below for details).
 
 # Technologies Used
 
@@ -30,8 +32,7 @@ This project is a real-time chat application built using Flask and Socket.IO. It
 
 # Installation
 
-
-Ensure you have Python 3.x installed on your system.
+Ensure you have Python installed on your system.
 
 Steps to Run Locally
 
@@ -48,28 +49,45 @@ cd CPSC455_Project1`
 
 `python main.py`
 
-# Access the application:
-Open your browser and navigate to:
+# Getting Started
 
-http://127.0.0.1:5000
+1. Open your browser
+   
+2. Navigate to: http://127.0.0.1:5000
 
-# Usage Instructions
+# Joining a chat room
 
-Open the application in your browser.
+1. Click "Join a Room".
+   
+2. Enter the Room Code (provided by another user).
+   
+3. Click "Join" to enter the chat.
 
-- Enter a name and either:
+# Creating a Chat Room
+After entering a name in the name bar
+1. Click "Create a Room".
+   
+2. A unique Room Code will be generated once entered into chat room.
+   
+3. Share this code with friends so they can join.
+   
+4. Start chatting in real time!
 
-- Join an existing room using a room code.
+# Sending Messages 
 
-- Create a new chat room, which generates a unique room code.
+- Type your message in the input box at the bottom.
+- Click "Send" to send your message.
+- Messages appear instantly in the chat window.
 
-- Once inside a chat room:
+# Rate Limiting (Not Implemented)
 
-- Send messages in real time.
+This chat application does not include rate limiting. Attempts were made to add a spam prevention system, but the prevention system caused a glitch where valid messages such as just regular messages were detected as spam mistakenly, preventing users from sending messages properly or at all. Due to this issue, rate limiting was not included in this program to ensure smooth messaging.
 
-- See messages from other participants.
+As a result, users can currently send messages as fast as they like. 
 
-- Users joining or leaving are notified.
+# Messages Are Not Sending
+- Ensure you have a stable internet connection.
+- Try refreshing the page.
 
 # License
 
