@@ -76,3 +76,5 @@ This ensures smooth messaging while preventing excessive spam.
 
 ### License
 This project is licensed under the **MIT License**.
+
+* *used AI for formatting user guide* *
