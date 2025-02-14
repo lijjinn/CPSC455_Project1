@@ -12,7 +12,7 @@ Features
 - **Connection notifications** – See when users join or leave a chat room.
 - **WebSocket communication** – Messages are transmitted over a WebSocket connection using Flask-SocketIO.
 - **Secure and session-based** – Users enter a name before joining a chat room.
-- **Rate limiting implemented** – Users can send up to 5 messages within 10 seconds to prevent spam.
+- **Rate limiting** – Users can send up to 5 messages within 10 seconds to prevent spam.
 
 Technologies Used
 - **Flask** (Python web framework)
